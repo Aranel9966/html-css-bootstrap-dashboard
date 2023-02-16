@@ -3,12 +3,13 @@
     color: white;
     background-image:url("../img/sidebar-bg.png");
     background-color: #051e34;
-    height: calc(100vh - 47px);
+    height: calc(100vh - 52px);
     width: 150px;
+    
 }
 
 ._display{
-    height: calc(100vh - 47px);
+    height: calc(100vh - 52px);
     overflow: auto;
 }
 
