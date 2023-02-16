@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Bootstrap Dashboard</title>
 
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    
@@ -29,31 +29,41 @@
                 <i class="fa-solid fa-ellipsis-vertical"></i>
             </div>
             
-            <i class="fa-solid fa-bell text-warning"></i>
-
+            <!-- dropdown -->
+            
+            <div class="btn-group dropstart">
+              <button type="button" class="btn border border-0" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-bell text-warning"></i>
+              </button>
+              <ul class="dropdown-menu mt-4">
+                <li><a class="dropdown-item" href="#">Profilo</a></li>
+                <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
             
         </div>
     </nav>
 
-    <main>
+    <main class="d-flex">
         
         <!-- menu -->
         <div class="menu d-flex flex-column justify-content-between">
             <div class="d-flex flex-column p-3 gap-3">
     
-                <div class="d-flex gap-3 align-items-center" >
+                <div class="d-flex gap-3 p-2 align-items-center hover" >
                     <i class="fa-solid fa-house"></i> <span class="d-none d-md-flex">Home</span>
                 </div>
-                <div class="d-flex gap-3 align-items-center" >
+                <div class="d-flex gap-3 p-2 align-items-center hover" >
                     <i class="fa-solid fa-chart-simple"></i><span class="d-none d-md-flex">Stats</span>
                 </div>
-                <div class="d-flex gap-3 align-items-center" >
+                <div class="d-flex gap-3 p-2 align-items-center hover" >
                     <i class="fa-solid fa-signal"></i><span class="d-none d-md-flex">Signals</span>
                 </div>
                     
             </div>
-            <div class="d-flex flex-row p-3 gap-3 align-items-center">
-                
+
+            <div class="d-flex flex-row px-3 py-2 gap-3 align-items-center hover">
                 <i class="fa-solid fa-gear"></i><span class="d-none d-md-flex">Admin</span>
             </div>
     
@@ -71,7 +81,7 @@
                   </span>
                   <button class="btn btn-outline-light " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
 
-                  <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas offcanvas-end _responsive" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header">
                       <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -148,10 +158,9 @@
                             </label>
                           </div>
                         </div>
-                        <div class="col-3">
+                        <div >
                           <button type="submit" class="btn btn-primary">Salva</button>
-                        </div>
-                        <div class="col-3">
+                        
                           <button type="submit" class="btn btn-warning">Svuota</button>
                         </div>
                       </form>
@@ -161,16 +170,28 @@
                     </div>
                   </div>
                 </div>
-    
+                
                 <div class="col-md-4">
                     <p>Lorem ipsum dolor sit amet consectetur.</p>
                     <h3>125</h3>
                 </div>
                 <div class="col-md-4">
-                  <h3>Boolean</h3>
-                  <ul>
+                  <div class="d-flex">
+                    <h3 class="d-flex  ">Boolean </h3>
+                    <a class="__btn fs-6 mx-2  align-items-end " href="#" role="button">Link</a>
 
-                  </ul>
+                  </div>
+                  <ol class="breadcrumb ">
+                    
+                    <li class="">
+                      <a class="__btn" href="#" role="button">Link</a>
+                    </li>
+                    <li class="">
+                      <a class="__btn" href="#" role="button">Link</a>
+                    </li>
+                    
+                    
+                  </ol>
 
                 </div>
               </div>
@@ -190,13 +211,13 @@
                      <tbody>
                         <tr>
                          <td scope="col">Nome</td>
-                         <td scope="col">Data inizio</td>
-                         <td scope="col">ROI</td>
+                         <td scope="col ">Data inizio</td>
+                         <td scope="col ">ROI</td>
                          <td scope="col">Stato</td>
                          <td scope="col">Azioni</td>
                        </tr>
                        <tr>
-                         <td scope="row"><i class="fa-solid fa-code _circol"></i> Classe 75</td>   
+                         <td scope="row "><i class="fa-solid fa-code _circol"></i> Classe 75</td>   
                          <td>15 Feb 2021</td>
                          <td>20%</td>
                          <td> <button class="btn btn-success"  style="--bs-btn-padding-y: .10rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Done</button> </td>
