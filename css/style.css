@@ -6,15 +6,67 @@
     width: 150px;
 }
 
+._display{
+    height: calc(100vh - 47px);
+    overflow: auto;
+}
 
+main{
+    display: flex;
+}
 
+.color-bar{
+    
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    /* width: calc(100vw - 150px); */
+    background-color: #3a72e8;
+    color: white;
+}
 
+h2{
+    border-bottom: 1px solid lightgray;
+    background-color: #f7f7f7;
+    margin-top: 2px;
+    margin-bottom: 0;
+    padding: 10px;
+}
 
+._circol{
+    border-radius: 50%;
+    color: white;
+    background-color: orangered;
+    padding: 4px 3px;
+}
 
+._square-tab{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    
+}
 
+._square{
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: small;
+}
+
+.green{
+    background-color: green;
+    border-radius: 3px;
+    padding: 3px;
+}
 
 @media screen and (max-width:767px){
     .menu{
         width: 50px;
+    }
+
+    .color-bar{
+        /* width: calc(100vw - 50px); */
+        flex-direction: column-reverse;
     }
 }
