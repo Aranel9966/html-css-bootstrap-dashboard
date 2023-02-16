@@ -62,12 +62,10 @@ h2{
 }
 
 @media screen and (max-width:767px){
-    .menu{
-        width: 50px;
-    }
+    
 
     .color-bar{
-        /* width: calc(100vw - 50px); */
+        
         flex-direction: column-reverse;
     }
 }
